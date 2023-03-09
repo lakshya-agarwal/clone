@@ -4,17 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.http.HttpStatus;
+import org.common.utilities.constants.CommonConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.youtubeclone.Utils.CommonConstants;
 import com.example.youtubeclone.service.VideoService;
 
 @RestController
@@ -36,9 +34,5 @@ public class VideoController {
 		
 	}
 	
-	 @PostMapping("/jira-webhook/{pcmId}")
-	    public void handleWebhook(@RequestBody String payload,@PathVariable("pcmId") Integer pcmId) {
-		 	System.out.println("Received for pcm " + pcmId);
-	        System.out.println("Received Jira webhook: " + payload);
-	    }
+	 
 }

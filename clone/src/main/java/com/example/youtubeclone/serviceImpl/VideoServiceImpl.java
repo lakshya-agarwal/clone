@@ -1,7 +1,6 @@
 package com.example.youtubeclone.serviceImpl;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
