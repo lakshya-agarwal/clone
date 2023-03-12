@@ -23,5 +23,7 @@
 		<module>kafka-producer</module>
 		<module>clone</module>
 		<module>common-utilities</module>
+		<module>gateway</module>
+		<module>eureka</module>
 	</modules>
 </project>
